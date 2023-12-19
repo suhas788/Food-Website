@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Rubik:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+#opening-page {
+    background: url('restaurant-opening.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    color:rgb(247, 163, 7);
+    text-align: center;
+    font-family: 'Racing Sans One', sans-serif;
+    
+}
+
+#opening-page #welcome-message {
+    max-width: 600px;
+}
+
+ h1 {
+    font-size: 3.5em;
+    font-family: Racing Sans One;
+    letter-spacing: 1px;
+    z-index: 1;
+}
+
+ p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: aliceblue;
+}
+
+a{
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#explore-btn:hover {
+    background-color: #0056b3;
+}
+
+#img{
+    position: absolute;
+    top: 70;
+    left: 97vh;
+    z-index:1;
+}

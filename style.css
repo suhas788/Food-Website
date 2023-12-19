@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Rubik:wght@500&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family:'Racing Sans One', 'sans-serif';
+}
+
+body{
+  background-color: black;
+  color: rgb(252, 252, 252);
+}
+
+header nav{
+  background-color: rgb(238, 139, 9);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+header nav h1{
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+header nav form{
+  display: flex;
+  justify-content: center;
+}
+
+form input[type="text"]{
+  margin-right: 10px;
+  flex-grow: 1;
+  padding: 10px;
+  font-family: 'Gabarito', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Saira Extra Condensed', sans-serif;
+font-family: 'Saira Semi Condensed', sans-serif;
+}
+
+form input[type="text"],button[type="submit"]{
+  border: none;
+  padding: 7px;
+  border-radius: 4px;
+}
+
+form button[type="submit"]{
+background-color: rgb(35, 35, 131);
+color: white;
+cursor:pointer;
+font-family: 'Gabarito', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Saira Extra Condensed', sans-serif;
+font-family: 'Saira Semi Condensed', sans-serif;
+}
+
+form button[type="submit"]:hover,.FOODEL button:hover{ 
+background-color: rgb(1, 81, 253);
+}
+
+/* Main section */
+.FOODEL-container{
+  text-align: center;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+  grid-gap:40px;
+  width: 80%;
+  margin: 10px auto;
+  padding: 20px;
+  place-items: center;
+}
+
+.randomMealContainer {
+  text-align: center;
+  margin-left: 90vh;
+  margin-top: 3vh;
+  display: grid;
+  margin: 20px auto;
+  left: 20px;     
+  width: 80%;
+  place-items: center;
+}
+
+
+.FOODEL{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  color: black;
+  border-radius: 6px;
+  cursor: pointer;
+  max-width: 350px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.FOODEL:hover{
+  transform: scale(1.1);
+}
+
+.FOODEL img {
+    height: 300px;
+}
+
+.FOODEL h3{
+  font-size: 24px;
+  margin-block: 5px;
+}
+
+.FOODEL p{
+  font-size: 15px;
+  color: rgb(88, 70, 70);
+  margin: 2px 0;
+  place-items: center;
+
+}
+
+.FOODEL span{
+  font-weight:800;
+  color: rgb(54, 40, 40);
+}
+
+.FOODEL button{
+  font-size: 15px;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 18px auto;
+  background-color: rgb(35, 35, 131);
+  color: rgb(255, 128, 0);
+  border: none;
+}
+
+.FOODEL-details{
+  display: none;
+  position: fixed;
+  top:50%;
+  left: 50%;
+  transform:translate(-50%, -50%);
+  background-color: rgb(58, 57, 57);
+  border-radius: 12px;
+  width: 40%;
+  height: 60%;
+  font-size: 20px;
+  transition: all 0.5s ease-in-out;
+  overflow-y: scroll;
+}
+
+.FOODEL-closeb-btn{
+border: none;
+font-size: 18px;
+padding: 10px;
+border-radius: 4px;
+background-color: blue;
+color: aquamarine;
+position: absolute;
+top: 20px;
+right: 20px;
+}
+
+.FOODEL-details-content{
+  padding: 30px;
+}
+
+.ingredientList{
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+@media screen and (max-width:600px){
+  header nav {
+    flex-direction: column;
+  }
+
+  header nav form{
+    width:80%;
+    margin-top: 20px;
+  } 
+}
